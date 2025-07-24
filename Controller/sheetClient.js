@@ -187,7 +187,7 @@ const updateSiteInfor = async (req, res) => {
       `${siteName}!F1:F387`,
       `${date}`
     );
-
+    console.log(cellAddress);
     if (!cellAddress) {
       return res.status(404).send("Value not found");
     }
